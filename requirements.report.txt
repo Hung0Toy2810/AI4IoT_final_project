@@ -1,9 +1,0 @@
-# Dependencies bổ sung cho phần 17; dùng cùng môi trường khoa học đã khóa.
-python-docx==1.2.0
-python-pptx==1.0.2
-docxcompose==1.4.0
-Pillow==12.3.0
-CairoSVG==2.9.1
-PyMuPDF==1.28.2
-# Ngoài pip: Pandoc; MathJax 3.2.2 (npm, chỉ khi render công thức mới);
-# Cairo cho SVG; LibreOffice để chuyển DOCX sang PDF.

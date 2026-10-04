@@ -42,10 +42,9 @@ python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.lock.txt
 python -m pip install -r requirements.esp32.txt
-python -m pip install -r requirements.report.txt
 ```
 
-Mở `notebooks/har_complete_pipeline.ipynb`, chọn kernel của môi trường trên và chạy theo thứ tự từ đầu đến cuối. Notebook tự tải PPG-DaLiA khi dữ liệu chưa có. Dữ liệu tải xuống, checkpoint và artifact sinh ra được loại khỏi Git vì dung lượng lớn.
+Mở `notebooks/har_complete_pipeline.ipynb`, chọn kernel của môi trường trên và chạy theo thứ tự từ đầu đến cuối. Notebook tự tải PPG-DaLiA khi dữ liệu chưa có. Dữ liệu tải xuống, checkpoint và artifact sinh ra được loại khỏi Git vì dung lượng lớn. Notebook chỉ chứa pipeline dữ liệu, model, huấn luyện, đánh giá và triển khai ESP32; phần soạn báo cáo không nằm trong notebook.
 
 ## Firmware
 
