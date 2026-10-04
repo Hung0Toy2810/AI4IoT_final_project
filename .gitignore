@@ -1,0 +1,45 @@
+# Python and notebooks
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.ruff_cache/
+.pyright/
+
+# OS and editors
+.DS_Store
+.vscode/
+*.code-workspace
+
+# Downloaded datasets and generated experiment artifacts
+data/
+artifacts/
+
+# PlatformIO build products
+**/.pio/
+
+# Generated report workspace; final submission is uploaded separately
+reports/equations/
+reports/figures/
+reports/review/
+reports/tables/
+reports/*.md
+reports/*.pdf
+reports/bai_luan_hoan_chinh.docx
+reports/har_report.docx
+reports/har_report_da_sua.docx
+
+# Submission archive is for LMS, not source control
+submission/
+
+# Temporary files
+*.tmp
+*.log
+~$*
+
+# Office deliverables and private source documents
+*.docx
+*.pdf
+*.pptx
+*.zip
+!reports/report_template.docx

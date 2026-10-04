@@ -1,0 +1,4 @@
+# Cài cùng requirements.lock.txt; toolchain ESP32 pin trong platformio.ini.
+esptool==5.4.0
+platformio==6.2.0
+pyserial==3.5
