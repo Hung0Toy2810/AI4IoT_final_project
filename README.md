@@ -33,6 +33,8 @@ E2–E5 là trung bình của ba checkpoint. E1, E6 và Q1 dùng một checkpoin
 
 Q1 giảm 72,31% dung lượng trọng số và 16,31% thời gian inference so với E3/42, nhưng Macro F1 giảm 1,73 điểm. Thời gian toàn pipeline chỉ giảm 4,07% vì STFT vẫn dùng số thực.
 
+Độ trễ E1–E6/Q1 được đo trên cùng 1.000 cửa sổ Test và 50 lượt warm-up. E6 đạt Mean 88,349 ms, Median 88,218 ms và P95 90,585 ms. Dữ liệu đo thô và bảng so sánh nằm trong `results/`.
+
 ## Chạy notebook
 
 Yêu cầu Python 3.11. Tạo môi trường và cài dependency:

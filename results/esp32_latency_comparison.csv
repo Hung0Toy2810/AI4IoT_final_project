@@ -1,0 +1,8 @@
+model,checkpoint,firmware,mean_ms,median_ms,p95_ms,warmup,windows,same_fixed_window_ids,different_windows,includes_usb,includes_sensor_acquisition
+E1,seed 42,E1–E5/Q1 combined,1211.269136,1211.302,1211.3801,50,1000,True,True,False,False
+E2,seed 42,E1–E5/Q1 combined,89.083902,89.084,89.116,50,1000,True,True,False,False
+E3,seed 42,E1–E5/Q1 combined,109.66528,109.725,109.789,50,1000,True,True,False,False
+E4,seed 42,E1–E5/Q1 combined,79.61598699999999,79.674,79.715,50,1000,True,True,False,False
+E5,seed 42,E1–E5/Q1 combined,61.540605000000006,61.547,61.608,50,1000,True,True,False,False
+E6,seed 42,E6 standalone,88.34912399999999,88.2175,90.58465,50,1000,True,True,False,False
+Q1,seed 42,E1–E5/Q1 combined,105.19995000000002,105.255,105.3321,50,1000,True,True,False,False

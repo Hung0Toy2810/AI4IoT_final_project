@@ -1,0 +1,84 @@
+{
+  "model": "E6",
+  "checkpoint_sha256": "d92e77c4c053087c6ee0b1786361d8eb4caf3f2b16a4dabe7acbe29928d5c543",
+  "device": {
+    "mac": "f8:b3:b7:a2:56:78",
+    "checkpoint_sha256": "d92e77c4c053087c6ee0b1786361d8eb4caf3f2b16a4dabe7acbe29928d5c543",
+    "cpu_mhz": 240,
+    "flash_bytes": 4194304,
+    "psram_bytes": 0,
+    "free_heap_bytes": 265956,
+    "min_free_heap_bytes": 260092,
+    "largest_free_block_bytes": 110580,
+    "sketch_bytes": 309744,
+    "model_workspace_bytes": 70096,
+    "coefficient_bytes": 30088
+  },
+  "warmup": 50,
+  "repeats": 1000,
+  "fixed_window_ids_sha256": "0786dee82b450417634e9086d22d4a611f3b210aae48b46e47e46345bd32a64a",
+  "same_fixed_window_ids_as_E1_E5_Q1": true,
+  "different_windows": true,
+  "includes_usb": false,
+  "includes_sensor_acquisition": false,
+  "timing_scope": "ESP32 full pipeline: PPG filter + normalization in model + inference + EMA postprocess; reset EMA for each independent window.",
+  "firmware_layout": "E6 standalone firmware; E1-E5/Q1 timings originate from their combined firmware.",
+  "device_before": {
+    "mac": "f8:b3:b7:a2:56:78",
+    "checkpoint_sha256": "d92e77c4c053087c6ee0b1786361d8eb4caf3f2b16a4dabe7acbe29928d5c543",
+    "cpu_mhz": 240,
+    "flash_bytes": 4194304,
+    "psram_bytes": 0,
+    "free_heap_bytes": 265692,
+    "min_free_heap_bytes": 260084,
+    "largest_free_block_bytes": 110580,
+    "sketch_bytes": 309744,
+    "model_workspace_bytes": 70096,
+    "coefficient_bytes": 30088
+  },
+  "device_after": {
+    "mac": "f8:b3:b7:a2:56:78",
+    "checkpoint_sha256": "d92e77c4c053087c6ee0b1786361d8eb4caf3f2b16a4dabe7acbe29928d5c543",
+    "cpu_mhz": 240,
+    "flash_bytes": 4194304,
+    "psram_bytes": 0,
+    "free_heap_bytes": 265600,
+    "min_free_heap_bytes": 259828,
+    "largest_free_block_bytes": 110580,
+    "sketch_bytes": 309744,
+    "model_workspace_bytes": 70096,
+    "coefficient_bytes": 30088
+  },
+  "pre_ms": {
+    "mean": 16.024409,
+    "median": 16.024,
+    "p95": 16.037,
+    "p99": 16.04201,
+    "min": 15.994,
+    "max": 16.056
+  },
+  "infer_ms": {
+    "mean": 72.17352900000002,
+    "median": 72.048,
+    "p95": 74.4195,
+    "p99": 74.92959,
+    "min": 69.613,
+    "max": 75.292
+  },
+  "post_ms": {
+    "mean": 0.148952,
+    "median": 0.148,
+    "p95": 0.155,
+    "p99": 0.158,
+    "min": 0.147,
+    "max": 0.159
+  },
+  "total_ms": {
+    "mean": 88.34912399999999,
+    "median": 88.2175,
+    "p95": 90.58465,
+    "p99": 91.09866,
+    "min": 85.799,
+    "max": 91.459
+  }
+}

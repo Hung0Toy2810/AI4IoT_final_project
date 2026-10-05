@@ -30,6 +30,6 @@ UART 921600 baud. Header little-endian `<III`: magic `0x50524148`, command, argu
 
 PPG 64 Hz, ACC 32 Hz trong g, cửa sổ 8 giây. Hạ mẫu PPG q=2 bằng SOS Chebyshev I bậc 8 và odd padding 27 mẫu; forward/backward chỉ dùng dữ liệu trong cửa sổ hiện có. Classifier nhận 4×256 mẫu ở 32 Hz và chuẩn hóa bằng mean/std Train. Runtime SOS dùng float64, cache dataset gốc dùng float32; sai lệch được ghi riêng. Temperature = 0.8096222555193905, EMA alpha = 0.35. Reset EMA khi đổi subject hoặc thiếu cửa sổ; hop = 2 giây.
 
-Benchmark dùng 50 warm-up; không tính USB, I/O cảm biến hoặc 8 giây thu cửa sổ. Dữ liệu được phát lại từ tập test; chưa nối cảm biến trực tiếp. Các tệp CSV/JSON, confusion matrix và biểu đồ Plotly nằm ở `artifacts/esp32/`.
+Benchmark so sánh trực tiếp dùng 50 cửa sổ warm-up và đúng 1.000 window ID Test đã dùng cho E1–E5/Q1. Mỗi lượt nhận PPG 64 Hz cùng ACC 32 Hz dạng thô; ESP32 đo toàn bộ tiền xử lý, inference và hậu xử lý. USB, I/O cảm biến và 8 giây thu cửa sổ không được tính. Dữ liệu đo E6 nằm trong `results/e6_fair_latency.csv`; bảng so sánh nằm ở `results/esp32_latency_comparison.csv`.
 
 RAM tĩnh do linker báo, workspace model và heap runtime là các phép đo khác nhau. Không cộng các số này để suy ra tổng bộ nhớ. Stack high-water ghi giá trị của ESP-IDF; đây là phần stack nhỏ nhất còn trống, không phải peak heap.
