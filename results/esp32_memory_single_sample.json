@@ -1,0 +1,95 @@
+{
+  "board": "ESP32-D0WDQ6 revision 1.1",
+  "cpu_mhz": 240,
+  "psram": false,
+  "sample": "S13_W000035",
+  "sample_count_per_firmware": 1,
+  "method": "Each model was compiled as a separate firmware and run once on the same stored Test window. USB transfer and sensor acquisition are outside inference. Static RAM and firmware flash are linker reports; weights are serialized model coefficients; heap and stack are read on board.",
+  "build": "espressif32 6.12.0, Arduino 2.0.17, -O3, no compiler warnings",
+  "rows": [
+    {
+      "model": "E1",
+      "sample": "S13_W000035",
+      "weights_bytes": 2986746,
+      "firmware_flash_bytes": 3270681,
+      "static_ram_bytes": 89964,
+      "heap_before_bytes": 237672,
+      "min_free_heap_bytes": 231844,
+      "heap_after_bytes": 237572,
+      "stack_min_free_bytes": 6636,
+      "elapsed_us": 1233285
+    },
+    {
+      "model": "E2",
+      "sample": "S13_W000035",
+      "weights_bytes": 45920,
+      "firmware_flash_bytes": 320449,
+      "static_ram_bytes": 41400,
+      "heap_before_bytes": 280976,
+      "min_free_heap_bytes": 275284,
+      "heap_after_bytes": 280976,
+      "stack_min_free_bytes": 6636,
+      "elapsed_us": 82957
+    },
+    {
+      "model": "E3",
+      "sample": "S13_W000035",
+      "weights_bytes": 22880,
+      "firmware_flash_bytes": 301489,
+      "static_ram_bytes": 63204,
+      "heap_before_bytes": 257440,
+      "min_free_heap_bytes": 251748,
+      "heap_after_bytes": 257440,
+      "stack_min_free_bytes": 6636,
+      "elapsed_us": 107731
+    },
+    {
+      "model": "E4",
+      "sample": "S13_W000035",
+      "weights_bytes": 22592,
+      "firmware_flash_bytes": 300229,
+      "static_ram_bytes": 58676,
+      "heap_before_bytes": 262704,
+      "min_free_heap_bytes": 257012,
+      "heap_after_bytes": 262704,
+      "stack_min_free_bytes": 6636,
+      "elapsed_us": 77572
+    },
+    {
+      "model": "E5",
+      "sample": "S13_W000035",
+      "weights_bytes": 22016,
+      "firmware_flash_bytes": 300557,
+      "static_ram_bytes": 63204,
+      "heap_before_bytes": 257440,
+      "min_free_heap_bytes": 251748,
+      "heap_after_bytes": 257440,
+      "stack_min_free_bytes": 6636,
+      "elapsed_us": 59226
+    },
+    {
+      "model": "E6",
+      "sample": "S13_W000035",
+      "weights_bytes": 30088,
+      "firmware_flash_bytes": 309685,
+      "static_ram_bytes": 106920,
+      "heap_before_bytes": 265956,
+      "min_free_heap_bytes": 260092,
+      "heap_after_bytes": 265956,
+      "stack_min_free_bytes": 6588,
+      "elapsed_us": 89740
+    },
+    {
+      "model": "Q1",
+      "sample": "S13_W000035",
+      "weights_bytes": 6336,
+      "firmware_flash_bytes": 287037,
+      "static_ram_bytes": 75476,
+      "heap_before_bytes": 290768,
+      "min_free_heap_bytes": 285076,
+      "heap_after_bytes": 290768,
+      "stack_min_free_bytes": 6636,
+      "elapsed_us": 104454
+    }
+  ]
+}
